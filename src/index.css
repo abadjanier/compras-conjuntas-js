@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --stripe-purple: #635bff;
+  --stripe-dark: #0a2540;
+  --stripe-light: #f6f9fc;
+  --stripe-text: #425466;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--stripe-dark);
+  background-color: var(--stripe-light);
+}
+
+.btn-stripe {
+  @apply bg-[#635bff] text-white font-semibold py-2 px-4 rounded-full hover:bg-[#4b44c9] transition duration-300;
+}
+
+.card-stripe {
+  @apply bg-white rounded-lg shadow-md overflow-hidden border border-gray-200;
+}
+
+.gradient-bg {
+  background: linear-gradient(90deg, #635bff, #4b44c9);
+}
